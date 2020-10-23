@@ -20,16 +20,16 @@ Access Project path
 cd message-board
 ```
 
-Install Dependencies
-
-```
-composer install
-```
-
 Copy `.env` file
 
 ```
 cp .env.example .env
+```
+
+Install Dependencies
+
+```
+composer install
 ```
 
 Create a sqlite (empty) file for storing the database (other driver requires additional set up); by default it has to be create in the following relative path `database\database.sqlite`.
