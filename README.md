@@ -32,6 +32,12 @@ Install Dependencies
 composer install
 ```
 
+Generate App Key
+
+```
+php artisan key:generate --ansi
+```
+
 Create a sqlite (empty) file for storing the database (other driver requires additional set up); by default it has to be create in the following relative path `database\database.sqlite`.
 
 Then run migrations
@@ -51,6 +57,14 @@ Which output a URL as follows
 ```
 Starting Laravel development server: http://127.0.0.1:8000
 [Fri Oct 23 21:00:07 2020] PHP 7.4.11 Development Server (http://127.0.0.1:8000) started
+```
+
+*Optional - Seed Database*
+
+Run the following command to seed the messages board with 50 new messages per run
+
+```
+php artisan db:seed
 ```
 
 ### API
